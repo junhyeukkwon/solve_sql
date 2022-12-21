@@ -1,1 +1,0 @@
-# Leetcode solve SQL
