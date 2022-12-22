@@ -1,0 +1,9 @@
+-- 코드를 입력하세요
+-- 가격 대 별로 범위를 지정
+-- 범위에 해당하는 product 갯수 카운팅
+
+SELECT CONCAT(LEFT(PRICE, 1),'0000')  AS PRICE_GROUP
+        , COUNT(LEFT(PRICE, 1)) AS PRODUCTS
+FROM PRODUCT
+GROUP BY PRICE_GROUP
+ORDER BY PRICE_GROUP
