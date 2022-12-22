@@ -1,0 +1,3 @@
+-- 코드를 입력하세요
+SELECT SUM(IF(AGE IS NULL ,1,0)) AS USERS
+FROM USER_INFO 
